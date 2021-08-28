@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+rel="stylesheet"
+integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <div class="header">
+      <div class=" container_flex menu_container">
+        <div class="logo">
+          <a href="#" >
+            <img  src="img/sportcar.jpg" alt="logo">
+          </a>
+        </div>
+        <ul class="main-menu">
+          <li class="menu_header_item"><a href="#">Portfolio</a></li>
+          <li class="menu_header_item"><a href="#">About</a></li>
+          <li class="menu_header_item"><a href="#1">Services</a></li>
+          <li class="menu_header_item"><a href="#">Blog</a></li>
+          <li class="menu_header_item"><button class="button">Sign In</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="slider-background">
+      <div class="slider">
+        <div class="item">
+          <img src="img/img_1.jpg" > 
+        </div>
+        <div class="item">
+          <img src="img/img_2.jpg" > 
+        </div>
+        <div class="item">
+          <img src="img/img_3.jpg" > 
+        </div>
+        <a class="previous">&#10094</a>
+        <a class="next">&#10095</a>
+      </div>
+    </div>
+    <div class="background-midle">
+      <div class="promotie">
+        <div id="outdate" class="date container-promotie "></div>
+      </div>
+      <div class="calculator-head">Calculator</div>
+      <div class="container-calculator">
+        <forma class="input-date" > 
+          <label for="car-price" > Automobilul costă:</label>
+          <input id="car-price" type="range" min="5000" max="10000" step="1000" />
+          <input id="price-out" type="text" disabled>
+          <label for="car-avans ">Am un avans de</label>
+          <input id="avans-out" type="text" disabled>
+          <label>Termenul creditului</label>
+          <input id="credit-time" type="range" min="12" max="36" step="12" />
+          <input id="time-out" type="text"  disabled>
+        </forma>
+        <div class="block-suma">
+          <div>
+            <label id="result">Prima Rata</label>
+            <input id="fin-result" type="text" class="inpdis" disabled >
+          </div>
+          <div>
+            <label id="res-tpay">Suma Ramasa</label>
+            <input id="rest-payOut" type="text" class="inpdis" disabled >
+          </div>
+          <div> 
+            <label id="month-pay">Plata Lunara</label>
+            <input id="month-payOut" type="text" class="inpdis" disabled >
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class= "container-servicii row" id="1" >
+      <div class="col-4  " >
+        <div  class="center-serv">
+          <button class="btn-add" id="butt-disc">Discount</button>
+            <p class="anime" id="discount" data-name ="Discount" >Discount</p>
+            <p class="anime" id="description1" >Return you old car and get Dicount!</p>
+            <div class="imagefit">
+              <img class="anime" id="car" src ="img/car.png" >
+            </div>
+        </div>
+      </div>
+      <div class="col-4 center-serv">
+        <button class="btn-add" id="butt-cred">Credit</button>
+        <p class="anime2" id="credit" data-name2 ="Credit">Credit</p>
+        <p class="anime2" id="description2">Credit for you dream car. Fast and easy!</p>
+        <div class="imagefit">
+          <img class="anime2" id="creditimg" src="img/creditimg.png">
+        </div>  
+      </div>
+      <div class="col-4 center-serv ">
+        <button class="btn-add" id="butt-cons">Consulting</button>
+        <p class="anime3" id="consult" data-name3 ="Consulting">Consulting<p>
+        <p class="anime3" id= "description3">Consult a Leasing Expert!</p>
+        <div class="imagefit">
+          <img class="anime3 img3" id="expert" src="img/expertleasing.png">
+        </div>
+      </div>
+    </div>
+    <div class="container1  row distance">
+      <div class="col-4">
+        <div class="result" id="servdisc-out"></div>
+      </div>
+      <div class="col-4">
+        <div class="result" id="servcred-out"></div>
+      </div>
+      <div class="col-4">
+        <div class="result" id="servcons-out"></div>
+      </div> 
+    </div>
+    <div class="container pt-5 pb-5">
+      <div class="row justify-content-center">
+        <div class="col-6 ">
+          <div class="card p-3 box">
+            <form>
+              <h1 class="h2 mb-4">Schimb valutar</h1>
+              <div class="courses">
+                <div class="course-item card card-body">
+                  <div class="course-item-title">Curs USD</div>
+                  <div class="course-item-value" data-value="USD">----</div>
+
+                </div>
+                <div class="course-item card card-body">
+                  <div class="course-item-title">Curs EUR</div>
+                  <div class="course-item-value" data-value="EUR">----</div>
+
+                </div>
+                <div class="course-item card card-body">
+                  <div class="course-item-title">Curs GBP</div>
+                  <div class="course-item-value" data-value="GBP">----</div>
+
+                </div>
+                <div class="course-item card card-body">
+                  <div class="course-item-title">Curs CAD</div>
+                  <div class="course-item-value" data-value="CAD">----</div>
+
+                </div>
+                <div class="course-item card card-body">
+                  <div class="course-item-title">Curs RON</div>
+                  <div class="course-item-value" data-value="RON">----</div>
+
+                </div>
+              </div>
+              <div class="row mb-1">
+                <div class="col">
+                  <label for="name">Cumpără:</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option value="MDL" selected>MDL - Lei</option>
+                  </select>
+                </div>
+                <div class="col">
+                  <label for="name">Summa:</label>
+                  <select class="form-control" id="select">
+                    <option value="USD">USD - Dollar USA</option>
+                    <option value="EUR">EUR - Euro</option>
+                    <option value="GBP">GBP - Lira sterlina</option>
+                    <option value="CAD">CAD - Dolar Canadian</option>
+                    <option value="RON">RON - Leul Rominesc</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <input id="input" type="number" class="form-control" autofocus />
+                </div>
+                <div class="col">
+                  <input id="result-car" type="number" class="form-control" />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <script src="anime.min.js"></script>
+    <script src= "script.js"></script>
+    
+  </body>
+</html>
